@@ -1,5 +1,6 @@
-export default function addCalorie(food){
+export default function addCalorie(food, calory) {
     return {
-        type: food
+        type: food,
+        calory: calory
     }
 };

@@ -16,42 +16,42 @@ class Foods extends Component{
             <div className="food-container">
                 <div className="food">
                     <img src={ramens}
-                        onClick={() => this.props.handleClick(this.props.foods.ramen)}
+                        onClick={() => this.props.handleClick('ラーメン', 700)}
                     />
                 </div>
                 <div className="food">
                     <img src={onigiri}
-                        onClick={() => this.props.handleClick(this.props.foods.onigiri)}
+                        onClick={() => this.props.handleClick('おにぎり', 200)}
                     />
                 </div>
                 <div className="food">
                     <img src={burger}
-                        onClick={() => this.props.handleClick(this.props.foods.burger)}
+                        onClick={() => this.props.handleClick('ハンバーガー', 300)}
                     />
                 </div>
                 <div className="food">
                     <img src={pan}
-                        onClick={() => this.props.handleClick(this.props.foods.pan)}
+                        onClick={() => this.props.handleClick('パン', 200)}
                     />
                 </div>
                 <div className="food">
                     <img src={milk}
-                        onClick={() => this.props.handleClick(this.props.foods.milk)}
+                        onClick={() => this.props.handleClick('牛乳', 200)}
                     />
                 </div>
                 <div className="food">
                     <img src={lunch}
-                        onClick={() => this.props.handleClick(this.props.foods.lunch)}
+                        onClick={() => this.props.handleClick('社食のランチ', 700)}
                     />
                 </div>
                 <div className="food">
                     <img src={curry}
-                        onClick={() => this.props.handleClick(this.props.foods.curry)}
+                        onClick={() => this.props.handleClick('カレー', 700)}
                     />
                 </div>
                 <div className="food">
                     <img src={don}
-                        onClick={() => this.props.handleClick(this.props.foods.don)}
+                        onClick={() => this.props.handleClick('吉野家の牛丼', 500)}
                     />
                 </div>
             </div>
@@ -65,7 +65,7 @@ function mapStateToProps(state) {
 
 function mapDispatchToProps(dispatch) {
     return {
-        handleClick: (food) => { dispatch(addCalorie(food)) }
+       handleClick: (food, calory) => { dispatch(addCalorie(food,calory)) }
     }
 }
 
