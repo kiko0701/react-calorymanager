@@ -14,14 +14,46 @@ class Foods extends Component{
     render() {
         return (
             <div className="food-container">
-                <div className="food"><img src={ramens} onClick={ () => this.props.handleClick(this.props.foods.ramen) }/></div>
-                <div className="food"><img src={onigiri} onClick={() => this.props.handleClick(this.props.foods.onigiri)}/></div>
-                <div className="food"><img src={burger} onClick={() => this.props.handleClick(this.props.foods.burger)}/></div>
-                <div className="food"><img src={pan} onClick={() => this.props.handleClick(this.props.foods.pan)}/></div>
-                <div className="food"><img src={milk} onClick={() => this.props.handleClick(this.props.foods.milk)}/></div>
-                <div className="food"><img src={lunch} onClick={() => this.props.handleClick(this.props.foods.lunch)}/></div>
-                <div className="food"><img src={curry} onClick={() => this.props.handleClick(this.props.foods.curry)}/></div>
-                <div className="food"><img src={don} onClick={() => this.props.handleClick(this.props.foods.don)}/></div>
+                <div className="food">
+                    <img src={ramens}
+                        onClick={() => this.props.handleClick(this.props.foods.ramen)}
+                    />
+                </div>
+                <div className="food">
+                    <img src={onigiri}
+                        onClick={() => this.props.handleClick(this.props.foods.onigiri)}
+                    />
+                </div>
+                <div className="food">
+                    <img src={burger}
+                        onClick={() => this.props.handleClick(this.props.foods.burger)}
+                    />
+                </div>
+                <div className="food">
+                    <img src={pan}
+                        onClick={() => this.props.handleClick(this.props.foods.pan)}
+                    />
+                </div>
+                <div className="food">
+                    <img src={milk}
+                        onClick={() => this.props.handleClick(this.props.foods.milk)}
+                    />
+                </div>
+                <div className="food">
+                    <img src={lunch}
+                        onClick={() => this.props.handleClick(this.props.foods.lunch)}
+                    />
+                </div>
+                <div className="food">
+                    <img src={curry}
+                        onClick={() => this.props.handleClick(this.props.foods.curry)}
+                    />
+                </div>
+                <div className="food">
+                    <img src={don}
+                        onClick={() => this.props.handleClick(this.props.foods.don)}
+                    />
+                </div>
             </div>
         );
     }
